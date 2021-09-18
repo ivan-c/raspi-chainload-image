@@ -1,0 +1,7 @@
+#!ipxe
+
+# loaded by ipxe.efi
+
+# TODO replace with generic NFS boot script
+echo Booting from scyther...
+chain --replace --autofree http://scyther:8000/raspi.ipxe
