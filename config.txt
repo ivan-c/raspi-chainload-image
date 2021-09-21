@@ -45,4 +45,3 @@ upstream_kernel=1
 
 include syscfg.txt
 include usercfg.txt
-

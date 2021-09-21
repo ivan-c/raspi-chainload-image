@@ -16,11 +16,3 @@ follows:
                    are launched as the "kernel" by config.txt
 * boot.scr       - the boot script executed by uboot*.bin which in turn
                    loads...
-* vmlinuz        - the Linux kernel, executed by boot.scr
-* initrd.img     - the initramfs, executed by boot.scr
-* meta-data      - meta-data for cloud-init; usually just contains the
-                   instance id
-* network-config - network configuration for cloud-init; edit this to set up
-                   wifi access points and other networking settings
-* user-data      - user-data for cloud-init; edit this to configure initial
-                   users, SSH keys, packages, etc.
