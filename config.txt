@@ -21,9 +21,9 @@ kernel=uboot_rpi_2.bin
 kernel=uboot_rpi_3.bin
 
 # enable UART; use fixed CPU clockspeed
+# early boot (U-Boot, iPXE) messages garbled on serial if disabled
 # TODO disable once serial output no longer needed, or configure PL011
-# TODO test
-#enable_uart=1
+enable_uart=1
 
 # WIP testing different serial for more early messages
 dtoverlay=disable-bt
@@ -37,7 +37,7 @@ device_tree_address=0x03000000
 # included configuration. The only reason they are included is, again, to
 # support old firmwares which don't understand the "include" command.
 
-enable_uart=1
+
 cmdline=cmdline.txt
 
 # WIP 2021-09-17 testing booting debian with eth0
